@@ -1,0 +1,182 @@
+@import "nullstyle.scss";
+
+
+
+%links{
+           color: rgb(84,122,207);
+           border: 1px solid rgb(239,240,244);
+           padding: 9px;
+           border-radius: 50%;
+           margin-left: 12px;
+}
+
+
+
+
+
+
+body{
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+    max-width: 1440px;
+    
+    
+    
+}
+.container{
+   text-align: center;
+   margin-top: 85px;
+   margin-bottom: 55px;
+
+   .header{
+       margin-top: 60px;
+       .heading{
+           font-size: 42px;
+           color: rgb(149,149,149);
+           span{
+               font-weight: 700;
+               color: black;
+           }
+       }
+       .paragraph{
+           margin-top: 30px;
+       }
+   }
+   .email_form{
+       margin-top: 40px;
+       
+      .email{
+          width: 400px/1440px*100%;
+          height: 55px;
+          border: none;
+          border: 1px solid rgb(207,213,229);
+          border-radius: 30px;
+          padding-left: 25px;
+          outline: none;
+      } 
+      .button_submit{
+       width: 200px/1440px*100%;
+       height: 55px;
+       border: none;
+       border-radius: 30px;
+       background-color:rgb(77,123,243);
+       margin-left: 15px;
+       color: white;
+       font-weight: 500;
+       font-size: 15px;
+       outline: none;
+
+       &:hover{
+           background-color: rgb(113,149,245);
+           cursor: pointer;
+       }
+      }
+   }
+   .content_image{
+       margin-top: 70px;
+       
+       .illustration{
+           width: 640px/1440px*100%;
+           
+       }
+   }
+   .footer{
+       margin-top: 50px;
+       .fab{
+          @extend %links;
+
+           &:first-child{
+             margin-left: 0px;
+             padding: 9px 12px;
+           }
+           &:hover{
+               background-color: rgb(79,128,249);
+               color: white;
+               cursor: pointer;
+           }
+       }
+       .copyright{
+           font-size: 10px;
+           color: rgb(192,192,192);
+           margin-top: 25px;
+       }
+   }
+}
+.EmptyEmail{
+    border: 2px solid rgb(224,96,109)!important;
+
+    }
+    .empty_error{
+        font-size: 15px;
+        margin-left:-200px;
+        color: red;
+        display: none;
+    }
+    .structure{
+        font-size: 15px;
+        margin-left:-200px;
+        color: red;
+        display: none; 
+    }
+
+  
+.EmailFiled{
+    border: 1px solid rgb(207,213,229)!important;
+}
+
+@media screen and (max-width:750px){
+    body{
+        
+        max-width: 750px;
+        
+        
+        
+    }
+    .container{
+
+       .header{
+           
+           .heading{
+               
+               span{
+                   font-weight: 700;
+                   color: black;
+               }
+           }
+           .paragraph{
+               margin-top: 30px;
+           }
+       }
+       .email_form{
+           margin-top: 40px;
+           display:block;
+           
+          .email{
+              width: 540px/750px*100%;
+              
+          } 
+          .button_submit{
+           width: 540px/750px*100%;
+           
+           margin-left: 5px;
+           margin-top: 22px;
+    
+          
+          }
+       }
+      
+       }
+       .empty_error{
+        
+        margin-left:0px;
+        margin-top: -74px;
+        margin-bottom: 130px;
+       
+    }
+    .structure{
+        margin-left:0px;
+        margin-top: -74px;
+        margin-bottom: 130px;
+    }
+    }
+  
